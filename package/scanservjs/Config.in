@@ -1,0 +1,6 @@
+config BR2_PACKAGE_SCANSERVJS
+	bool "ScanServJS"
+  depends on BR2_PACKAGE_NODEJS
+	help
+	  NodeJS Web UI for SANE
+	  https://github.com/sbs20/scanservjs.git
