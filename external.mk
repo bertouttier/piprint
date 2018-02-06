@@ -1,4 +1,4 @@
-include $(sort $(wildcard $(BR2_EXTERNAL_PIPRINT_BUILDROOT_BUILDROOT_PATH)/package/*/*.mk))
+include $(sort $(wildcard $(BR2_EXTERNAL_PIPRINT_BUILDROOT_PATH)/package/*/*.mk))
 
 flash-rpi:
 	@if ! test $(DRIVE); then \

@@ -1,1 +1,2 @@
 source "$BR2_EXTERNAL_PIPRINT_BUILDROOT_PATH/package/scanservjs/Config.in"
+source "$BR2_EXTERNAL_PIPRINT_BUILDROOT_PATH/package/brlaser/Config.in"

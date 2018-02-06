@@ -1,0 +1,23 @@
+--- a/CMakeLists.txt	2018-01-29 08:06:48.000000000 +0100
++++ b/CMakeLists.txt	2018-02-06 14:03:24.280666751 +0100
+@@ -40,7 +40,6 @@
+ extra_cxx_compiler_flag("-Wall")
+ extra_cxx_compiler_flag("-Wno-missing-braces")
+ # Some security flags
+-extra_cxx_compiler_flag("-fstack-protector-strong")
+ extra_cxx_compiler_flag("-Wformat")
+ extra_cxx_compiler_flag("-Werror=format-security")
+ extra_cxx_compiler_flag("-D_FORTIFY_SOURCE=2")
+@@ -77,12 +76,6 @@
+ 
+ cmake_push_check_state()
+ set(CMAKE_REQUIRED_FLAGS "${CMAKE_REQUIRED_FLAGS} ${CUPS_CFLAGS}")
+-check_include_file_cxx(cups/raster.h HAVE_CUPS_RASTER_H)
+-cmake_pop_check_state()
+-if(NOT HAVE_CUPS_RASTER_H)
+-  message(SEND_ERROR "<cups/raster.h> header not found. Are the CUPS development packages installed?")
+-endif()
+-
+ 
+ ## Build instructions
+ 
