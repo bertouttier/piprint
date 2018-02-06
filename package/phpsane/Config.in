@@ -1,0 +1,5 @@
+config BR2_PACKAGE_PHPSANE
+	bool "phpsane"
+	help
+	  PHPSane
+	  https://sourceforge.net/projects/phpsane/
